@@ -74,20 +74,20 @@ document.getElementById('year').textContent = new Date().getFullYear();
     recTitle.textContent = '检测到 Windows 平台';
     recDesc.textContent = '建议下载并先启动服务端，再启动客户端。';
     recIcon.innerHTML = '<i class="fa-brands fa-windows"></i>';
-    recActions.appendChild(button('pack/LongMarchServer.exe', '下载 Server.exe', 'fa-solid fa-server', 'primary'));
-    recActions.appendChild(button('pack/LongMarchClient.exe', '下载 Client.exe', 'fa-solid fa-desktop', 'secondary'));
+    recActions.appendChild(button('https://github.com/MSDOS-Signal/ChangZhengdownload/releases/download/Changzheng/LongMarchServer.exe', '下载 Server.exe', 'fa-solid fa-server', 'primary'));
+    recActions.appendChild(button('https://github.com/MSDOS-Signal/ChangZhengdownload/releases/download/CZ/LongMarchClient.exe', '下载 Client.exe', 'fa-solid fa-desktop', 'secondary'));
   } else if (isLinux) {
     recTitle.textContent = '检测到 Linux 平台';
     recDesc.textContent = '下载 tar 包并解压后按指南使用 Python 启动。';
     recIcon.innerHTML = '<i class="fa-brands fa-linux"></i>';
-    recActions.appendChild(button('pack/Long_March.tar', '下载 Long_March.tar', 'fa-solid fa-file-archive', 'primary'));
+    recActions.appendChild(button('https://github.com/MSDOS-Signal/ChangZhengdownload/releases/download/ChangZhenglinux/Long_March.tar', '下载 Long_March.tar', 'fa-solid fa-file-archive', 'primary'));
   } else {
     recTitle.textContent = '未能识别平台';
     recDesc.textContent = '请根据您的系统选择下方对应版本进行下载。';
     recIcon.innerHTML = '<i class="fa-solid fa-laptop"></i>';
-    recActions.appendChild(button('pack/LongMarchServer.exe', 'Windows Server.exe', 'fa-solid fa-server', 'secondary'));
-    recActions.appendChild(button('pack/LongMarchClient.exe', 'Windows Client.exe', 'fa-solid fa-desktop', 'secondary'));
-    recActions.appendChild(button('pack/Long_March.tar', 'Linux Long_March.tar', 'fa-solid fa-file-archive', 'secondary'));
+    recActions.appendChild(button('https://github.com/MSDOS-Signal/ChangZhengdownload/releases/download/Changzheng/LongMarchServer.exe', 'Windows Server.exe', 'fa-solid fa-server', 'secondary'));
+    recActions.appendChild(button('https://github.com/MSDOS-Signal/ChangZhengdownload/releases/download/CZ/LongMarchClient.exe', 'Windows Client.exe', 'fa-solid fa-desktop', 'secondary'));
+    recActions.appendChild(button('https://github.com/MSDOS-Signal/ChangZhengdownload/releases/download/ChangZhenglinux/Long_March.tar', 'Linux Long_March.tar', 'fa-solid fa-file-archive', 'secondary'));
   }
 })();
 
